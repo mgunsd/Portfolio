@@ -5,6 +5,10 @@
 
 - Homepage mediaQuery need to be fixed.
 - inertia can be added (luxy.js).
+- `yarn add -D gh-pages`
+  then scripts addded tp pakage.json
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
 
 ## Features
 
