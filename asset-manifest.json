@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ef1775f6.chunk.css",
-    "main.js": "/Portfolio/static/js/main.6ebe5c6c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.6ebe5c6c.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.efb1fe8d.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.efb1fe8d.js.map",
-    "static/js/2.cd4b0f1a.chunk.js": "/Portfolio/static/js/2.cd4b0f1a.chunk.js",
-    "static/js/2.cd4b0f1a.chunk.js.map": "/Portfolio/static/js/2.cd4b0f1a.chunk.js.map",
-    "index.html": "/Portfolio/index.html",
-    "precache-manifest.802d0be2ba6eb23b4ac318e5d6de830a.js": "/Portfolio/precache-manifest.802d0be2ba6eb23b4ac318e5d6de830a.js",
-    "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.ef1775f6.chunk.css.map": "/Portfolio/static/css/main.ef1775f6.chunk.css.map",
-    "static/js/2.cd4b0f1a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.cd4b0f1a.chunk.js.LICENSE.txt",
-    "static/media/m-normalize.css": "/Portfolio/static/media/RadioGrotesk-Regular.c4dbdfed.otf"
+    "main.css": "/static/css/main.addaad7b.chunk.css",
+    "main.js": "/static/js/main.69854825.chunk.js",
+    "main.js.map": "/static/js/main.69854825.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
+    "static/js/2.f189de14.chunk.js": "/static/js/2.f189de14.chunk.js",
+    "static/js/2.f189de14.chunk.js.map": "/static/js/2.f189de14.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a4eda167b71b716ae83fd7ac1b7d6e4f.js": "/precache-manifest.a4eda167b71b716ae83fd7ac1b7d6e4f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.addaad7b.chunk.css.map": "/static/css/main.addaad7b.chunk.css.map",
+    "static/js/2.f189de14.chunk.js.LICENSE.txt": "/static/js/2.f189de14.chunk.js.LICENSE.txt",
+    "static/media/m-normalize.css": "/static/media/RadioGrotesk-Regular.c4dbdfed.otf"
   },
   "entrypoints": [
-    "static/js/runtime-main.efb1fe8d.js",
-    "static/js/2.cd4b0f1a.chunk.js",
-    "static/css/main.ef1775f6.chunk.css",
-    "static/js/main.6ebe5c6c.chunk.js"
+    "static/js/runtime-main.ceaf4b5f.js",
+    "static/js/2.f189de14.chunk.js",
+    "static/css/main.addaad7b.chunk.css",
+    "static/js/main.69854825.chunk.js"
   ]
 }
