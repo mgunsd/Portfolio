@@ -1,8 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
+//import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
-import { fonts, useTheme } from '../styles';
-import { useWindowSize } from '../hooks/useWindowSize';
 import { useSpring, animated } from 'react-spring';
+import { fonts, useTheme } from 'styles';
+import { useWindowSize } from 'hooks/useWindowSize';
 
 const NavLabel = styled.div`
   font: normal bold 15vw/1em ${fonts.primary},sans-serif;
@@ -12,8 +13,8 @@ const NavLabel = styled.div`
   font-weight: 700;
  opacity:1;
   &:hover {
-    letter-spacing: -0.03em;
-    font-size: 16vw;
+    //letter-spacing: -0.03em;
+    //font-size: 16vw;
     /* transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
     transition: font-size .8s cubic-bezier(.77,0,.175,1); */
 
@@ -47,9 +48,12 @@ const NavLink = styled.a`
   justify-content: flex-start;
   opacity:0.6;
   max-width: 100%;
+  filter: blur(5px);
   transition: all .8s cubic-bezier(.77,0,.175,1);
   &:hover {
-  opacity:1;
+  opacity:1;    
+  filter: blur(0px);
+
   }
   @media (max-width: 768px ){
     opacity:1;
@@ -118,17 +122,21 @@ const Nv = styled.nav`
     padding-left: 0;
   }
 `;
-const org0 = { mass: 10, tension: 550, friction: 140 }
-const fast = { tension: 1200, friction: 40 }
-const slow = { mass: 10, tension: 200, friction: 50 }
+// const org0 = { mass: 10, tension: 550, friction: 140 }
+// const fast = { tension: 1200, friction: 40 }
+// const slow = { mass: 10, tension: 200, friction: 50 }
 const org = { mass: 20, tension: 550, friction: 140 }
 export const Nav = () => {
   //const ref = useRef();
+  //scale3d(${((1 + (((Math.abs(x)) + 2) / 50))) }, 1, 1)
   const size = useWindowSize();
   const { setTheme } = useTheme();
   const calc = (x) => 45 - ((x / window.innerWidth) * 90);
-  const trans = (x) => `translate3d(${x}%, 0%, 0px) `
-
+  const trans = (x) => `translate3d(${x}%, 0%, 0px)
+   `
+  //  const trans = (x) => `translate3d(${x}%, 0%, 0px) rotateY(${-x / 10}deg) 
+  //  skew(${-x / 20}deg, ${x / 30}deg)
+  //   `
   const [props, set] = useSpring(() => ({ x: 0, config: org }))
 
   return (
