@@ -1,10 +1,21 @@
 import React from 'react';
 //import React, { useState, useRef } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { useSpring, animated } from 'react-spring';
 import { fonts, useTheme } from 'styles';
 import { useWindowSize } from 'hooks/useWindowSize';
-
+// const rotate = keyframes`
+//   0% {
+//     transform: translateY(0);
+//     transform-origin: 50% 50%;
+//     text-shadow: none;
+//   }
+//   100% {
+//     transform: translateY(-50px);
+//     transform-origin: 50% 50%;
+//     text-shadow: 0 1px 0 #D0C3A9, 0 2px 0 #D0C3A9, 0 3px 0 #D0C3A9, 0 4px 0 #D0C3A9, 0 5px 0 #D0C3A9, 0 6px 0 #D0C3A9, 0 7px 0 #D0C3A9, 0 8px 0 #D0C3A9, 0 9px 0 #D0C3A9, 0 50px 30px rgba(0, 0, 0, 0.3);
+//   }
+// `;
 const NavLabel = styled.div`
   font: normal bold 15vw/1em ${fonts.primary},sans-serif;
   text-transform: uppercase;
@@ -51,6 +62,7 @@ const NavLink = styled.a`
   filter: blur(5px);
   transition: all .8s cubic-bezier(.77,0,.175,1);
   &:hover {
+  /* //animation:  1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
   opacity:1;    
   filter: blur(0px);
 
@@ -84,7 +96,6 @@ const NavDash = styled.div`
 `;
 const NavContiner = styled(animated.div)`
   transform-style: preserve-3d;
-  
   will-change: transform;
   display: flex;
   position: relative;
