@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91cfd9d1462e22e72c2b365994e20250",
+    "revision": "0dd1bace2fe6dee06c853624d0624988",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "d655f6ea0c39d20e237d",
-    "url": "/Portfolio/static/css/main.ef1775f6.chunk.css"
+    "revision": "1153d8e1a97269ea67c5",
+    "url": "/Portfolio/static/css/main.84d3d598.chunk.css"
   },
   {
-    "revision": "343fefdc9eb8ed247bac",
-    "url": "/Portfolio/static/js/2.cd4b0f1a.chunk.js"
+    "revision": "02f1a3a59cc573f2cbd9",
+    "url": "/Portfolio/static/js/2.3e135a3f.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Portfolio/static/js/2.cd4b0f1a.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.3e135a3f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d655f6ea0c39d20e237d",
-    "url": "/Portfolio/static/js/main.19581a13.chunk.js"
+    "revision": "1153d8e1a97269ea67c5",
+    "url": "/Portfolio/static/js/main.24d836f7.chunk.js"
   },
   {
     "revision": "c66aa5eafc120060b1dc",
@@ -34,5 +34,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c4dbdfed0ad4e22f2c3eb44e7afa753b",
     "url": "/Portfolio/static/media/RadioGrotesk-Regular.c4dbdfed.otf"
+  },
+  {
+    "revision": "ff1c1ab9248c2f0037504994ab451bba",
+    "url": "/Portfolio/static/media/reactlogo.ff1c1ab9.svg"
   }
 ]);
