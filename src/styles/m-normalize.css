@@ -5,6 +5,30 @@ Document
 ========
 */
 
+/*
+Fonts
+*/
+
+@font-face {
+  font-family: "Radio Grotesk";
+  src: url("../assets/fonts/RadioGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Radio Grotesk";
+  src: url("../assets/fonts/RadioGrotesk-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Belle Story";
+  src: url("../assets/fonts/BelleStory.ttf") format("truetype");
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500;700&family=Lato&family=Open+Sans&display=swap");
+
 /**
 Use a better box model (opinionated).
 */
@@ -52,38 +76,8 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 
-@font-face {
-  font-family: "Radio Grotesk";
-  src: url("../assets/fonts/RadioGrotesk-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Radio Grotesk";
-  src: url("../assets/fonts/RadioGrotesk-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Belle Story";
-  src: url("../assets/fonts/BelleStory.ttf") format("truetype");
-  font-style: normal;
-}
-/* @font-face {
-  font-family: "SFProDisplay-Regular";
-  src: local("SFProDisplay-Regular"),
-    url(../assets/fonts/SFProDisplay-Regular.otf) format("opentype");
-} */
-
-/* @font-face {
-  font-family: "SFProDisplay-Bold";
-  src: local("SFProDisplay-Bold"),
-    url(../assets/fonts/SFProDisplay-Bold.otf) format("opentype");
-} */
-
 body {
-  font-family: "SFProDisplay-Regular", system-ui, -apple-system,
+  font-family: system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }

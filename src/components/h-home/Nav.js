@@ -2,8 +2,10 @@ import React from 'react';
 //import React, { useState, useRef } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useSpring, animated } from 'react-spring';
-import { fonts, useTheme } from 'styles';
+import { Color, Font } from 'utils';
+import { useTheme } from 'styles';
 import { useWindowSize } from 'hooks/useWindowSize';
+
 // const rotate = keyframes`
 //   0% {
 //     transform: translateY(0);
@@ -17,7 +19,7 @@ import { useWindowSize } from 'hooks/useWindowSize';
 //   }
 // `;
 const NavLabel = styled.div`
-  font: normal bold 15vw/1em ${fonts.primary},sans-serif;
+  font: normal bold 15vw/1em ${Font('title')};
   text-transform: uppercase;
   transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
   transition: font-size .5s cubic-bezier(.77,0,.175,1);
@@ -36,7 +38,7 @@ const NavLabel = styled.div`
 
 `;
 const NavNo = styled.h6`
-  font: normal bold 12px/20px ${fonts.primary},sans-serif;
+  font: normal bold 12px/20px ${Font('title')};
   margin-top: 2.6vw;
   margin-right: auto;
   margin-left: .25vw;
@@ -50,7 +52,7 @@ const NavNo = styled.h6`
 `;
 
 const NavLink = styled.a`
-  color: ${props => props.theme.colors.text};
+  color: ${Color('text')};
   cursor: pointer;
   display: flex;
   padding-top: 1vw;
@@ -85,7 +87,7 @@ const NavDash = styled.div`
   height: 2px;
   margin-right: 5vw;
   margin-left: 5vw;
-  background-color: ${props => props.theme.colors.text};
+  background-color: ${Color('text')};
   opacity:0.5;
   @media (max-width: 768px ){
     width: 80vw;

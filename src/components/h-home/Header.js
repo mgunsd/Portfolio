@@ -1,36 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
-import { fonts, useTheme } from '../styles';
+import { Color, Font } from 'utils';
+import { useTheme } from 'styles';
+
 
 const HeaderSubtitle = styled.h5`
   opacity: .5;
-
   margin-top: 0;
-  font-family: ${fonts.primary},sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font: normal 400 16px / 20px ${Font('title')};
   text-transform: uppercase;
   letter-spacing: 0;
   margin-bottom: 0;
-
-  line-height: 20px;
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  color: ${props => props.theme.colors.text};
+  color: ${Color('text')};
   transition: all .8s cubic-bezier(.77,0,.175,1);
 
 `;
 
 const HeaderName = styled.h4`
   margin-bottom: 2vw;
-  line-height: 1.5em;
-
   margin-top: 0;
-  font-family: ${fonts.primary},sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  
+  font: normal 400 16px / 20px ${Font('title')};
+
   text-transform: uppercase;
   letter-spacing: 0;
 
@@ -39,7 +34,7 @@ const HeaderName = styled.h4`
   margin-block-end: 1.33em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  color: ${props => props.theme.colors.text};
+  color: ${Color('text')};
   transition: all .8s cubic-bezier(.77,0,.175,1);
 `;
 
