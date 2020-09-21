@@ -1,4 +1,4 @@
 export const fonts = {
-  title: "Expletus Sans",
+  title: "Radio Grotesk",
   body: "Open Sans"
 };

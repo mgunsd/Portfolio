@@ -8,6 +8,25 @@ Document
 /*
 Fonts
 */
+
+@font-face {
+  font-family: "Radio Grotesk";
+  src: url("../assets/fonts/RadioGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Radio Grotesk";
+  src: url("../assets/fonts/RadioGrotesk-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Belle Story";
+  src: url("../assets/fonts/BelleStory.ttf") format("truetype");
+  font-style: normal;
+}
 @import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500;700&family=Lato&family=Open+Sans&display=swap");
 
 /**

@@ -6,7 +6,7 @@ import { fonts as f } from './fonts';
 const Mode = (
   window.matchMedia &&
   window.matchMedia('(prefers-color-scheme: dark)').matches
-) ? 'default' : 'default';
+) ? 'light' : 'dark';
 
 export const useTheme = () => useContext(ThemeContext);
 
@@ -27,19 +27,43 @@ const Theme = ({ children }) => {
 };
 
 export default Theme;
-
 export const themes = {
-  default: {
-    dark: true,
+  light: {
+    dark: false,
     colors: {
-      primary: c.turq,
-      body: c.white,
-      background: c.gray,
-      base: c.black,
+      text: c.dark,
+      base: c.light,
     },
     fonts: {
       title: f.title,
       body: f.body,
     },
-  }
+  },
+  dark: {
+    dark: true,
+    colors: {
+      text: c.light,
+      base: c.dark,
+    },
+    fonts: {
+      title: f.title,
+      body: f.body,
+    },
+  },
 };
+
+// export const themes = {
+//   default: {
+//     dark: true,
+//     colors: {
+//       primary: c.turq,
+//       body: c.white,
+//       background: c.gray,
+//       base: c.black,
+//     },
+//     fonts: {
+//       title: f.title,
+//       body: f.body,
+//     },
+//   }
+// };
