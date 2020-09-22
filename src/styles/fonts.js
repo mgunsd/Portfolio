@@ -1,4 +1,6 @@
 export const fonts = {
   title: "Radio Grotesk",
-  body: "Open Sans"
+  body: "Open Sans",
+  logo: "Expletus Sans",
+  icon: "SFProDisplay"
 };

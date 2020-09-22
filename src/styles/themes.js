@@ -6,7 +6,7 @@ import { fonts as f } from './fonts';
 const Mode = (
   window.matchMedia &&
   window.matchMedia('(prefers-color-scheme: dark)').matches
-) ? 'light' : 'dark';
+) ? 'dark' : 'dark';
 
 export const useTheme = () => useContext(ThemeContext);
 
@@ -37,6 +37,8 @@ export const themes = {
     fonts: {
       title: f.title,
       body: f.body,
+      logo: f.logo,
+      icon: f.icon,
     },
   },
   dark: {
@@ -48,6 +50,8 @@ export const themes = {
     fonts: {
       title: f.title,
       body: f.body,
+      logo: f.logo,
+      icon: f.icon,
     },
   },
 };

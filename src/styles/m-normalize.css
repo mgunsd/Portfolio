@@ -27,6 +27,12 @@ Fonts
   src: url("../assets/fonts/BelleStory.ttf") format("truetype");
   font-style: normal;
 }
+@font-face {
+  font-family: "SFProDisplay";
+  font-weight: normal;
+  src: local("SFProDisplay-Regular"),
+    url("../assets/fonts/SFProDisplay-Regular.otf") format("opentype");
+}
 @import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500;700&family=Lato&family=Open+Sans&display=swap");
 
 /**
@@ -38,6 +44,7 @@ Use a better box model (opinionated).
 *::after {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /**

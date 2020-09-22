@@ -1,10 +1,12 @@
 import React from 'react';
-import { Window } from 'components/a-commons';
+import { PageWithLeftSide } from 'components/a-commons';
 
 export const Contact = () => {
   return (
-    <Window>
-      Contact
-    </Window >
+    <PageWithLeftSide
+      side='Contact'
+    >
+      Let's Work Together
+    </PageWithLeftSide >
   )
 }
