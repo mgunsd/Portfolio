@@ -1,5 +1,5 @@
 import React from 'react';
-import { GridCenter, Brand, Body, Logo } from 'components/a-commons';
+import { GridCenter, Brand, Body, Logo } from 'pages/About/node_modules/components/a-commons';
 
 export const Emel = () => {
   return (
