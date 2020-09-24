@@ -33,12 +33,12 @@ export const Routes = [
     exact: true,
     component: Contact
   },
-  {
-    path: '/not-found',
-    key: 'not-found',
-    exact: true,
-    component: NotFound404,
-  },
+  // {
+  //   path: '/not-found',
+  //   key: 'not-found',
+  //   exact: true,
+  //   component: NotFound404,
+  // },
   /// nested Routes
   // {
   //   path: '/blog',
