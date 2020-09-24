@@ -6,7 +6,7 @@ import { Routes, RenderRoutes } from 'routes';
 
 const App = () =>
   <Theme>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <RenderRoutes routes={Routes} />
     </Router>
   </Theme >
