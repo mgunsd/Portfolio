@@ -1,10 +1,11 @@
 import React from 'react';
-import { Window } from 'components/a-commons';
+import { PageWithLeftSide } from 'components/a-commons';
+import { WorkContent } from 'components/w-work';
 
 export const Work = () => {
   return (
-    <Window>
-      Work
-    </Window >
+    <PageWithLeftSide side='Work'>
+      <WorkContent />
+    </PageWithLeftSide >
   )
 }

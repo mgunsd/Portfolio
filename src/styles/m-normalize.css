@@ -1,11 +1,6 @@
 /*! modern-normalize v0.7.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
-Document
-========
-*/
-
-/*
 Fonts
 */
 
@@ -45,6 +40,8 @@ Use a better box model (opinionated).
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -87,6 +84,16 @@ body {
   font-family: system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  height: 100%;
+}
+
+html {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0px; /* For Chrome, Safari, and Opera */
 }
 
 /*

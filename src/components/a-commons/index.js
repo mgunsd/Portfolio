@@ -1,4 +1,4 @@
 export * from './Grid';
 export * from './Logo';
-export * from './Text';
+export * from './atoms';
 export * from './Layout';

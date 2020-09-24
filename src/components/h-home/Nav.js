@@ -1,37 +1,24 @@
 import React from 'react';
 //import React, { useState, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { useSpring, animated } from 'react-spring';
 import { Color, Font } from 'utils';
 import { useTheme } from 'styles';
 import { useWindowSize } from 'hooks/useWindowSize';
 
-// const rotate = keyframes`
-//   0% {
-//     transform: translateY(0);
-//     transform-origin: 50% 50%;
-//     text-shadow: none;
-//   }
-//   100% {
-//     transform: translateY(-50px);
-//     transform-origin: 50% 50%;
-//     text-shadow: 0 1px 0 #D0C3A9, 0 2px 0 #D0C3A9, 0 3px 0 #D0C3A9, 0 4px 0 #D0C3A9, 0 5px 0 #D0C3A9, 0 6px 0 #D0C3A9, 0 7px 0 #D0C3A9, 0 8px 0 #D0C3A9, 0 9px 0 #D0C3A9, 0 50px 30px rgba(0, 0, 0, 0.3);
-//   }
-// `;
 const NavLabel = styled.div`
   font: normal bold 15vw/1em ${Font('title')};
   text-transform: uppercase;
-  transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
-  transition: font-size .5s cubic-bezier(.77,0,.175,1);
+  transition: all .8s cubic-bezier(.77,0,.175,1);
   font-weight: 700;
- opacity:1;
   &:hover {
-    //letter-spacing: -0.03em;
-    //font-size: 16vw;
-    /* transition: letter-spacing .8s cubic-bezier(.77,0,.175,1);
-    transition: font-size .8s cubic-bezier(.77,0,.175,1); */
+    letter-spacing: -0.03em;
+    font-size: 16vw;
+    transition: all .8s cubic-bezier(.77,0,.175,1);
+   }
+  
 
-  }
   /* @media (max-width: 768px ){
 
   } */
@@ -43,15 +30,9 @@ const NavNo = styled.h6`
   margin-right: auto;
   margin-left: .25vw;
   font-weight: 500;
- 
-  &:hover {
-  letter-spacing: -.02em;}
-  margin-block-start: 2.33em;
-  margin-block-end: 2.33em;
-
 `;
 
-const NavLink = styled.a`
+const NavLi = styled(NavLink)`
   color: ${Color('text')};
   cursor: pointer;
   display: flex;
@@ -59,16 +40,11 @@ const NavLink = styled.a`
   text-decoration: none;
   align-items: flex-start;
   justify-content: flex-start;
-  opacity:0.6;
   max-width: 100%;
-  filter: blur(5px);
-  transition: all .8s cubic-bezier(.77,0,.175,1);
-  &:hover {
-  /* //animation:  1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
-  opacity:1;    
-  filter: blur(0px);
-
+  &&&:hover {
+    opacity:1;
   }
+
   @media (max-width: 768px ){
     opacity:1;
     position: relative;
@@ -80,6 +56,7 @@ const NavLink = styled.a`
     align-self: stretch;
   }
 `;
+
 const NavDash = styled.div`
   margin-top: 8vw;
   margin-bottom: 8vw;
@@ -88,7 +65,7 @@ const NavDash = styled.div`
   margin-right: 5vw;
   margin-left: 5vw;
   background-color: ${Color('text')};
-  opacity:0.5;
+  opacity: 0.5;
   @media (max-width: 768px ){
     width: 80vw;
     height: 1px;
@@ -105,36 +82,33 @@ const NavContiner = styled(animated.div)`
   justify-content: center;
   perspective: 1000px;
   background-attachment: scroll!important;
-  /* &:hover {
-  opacity:0.5;
-  } */
+  opacity:1;
+  &:hover ${NavLi}{
+     opacity:0.5;
+  }
   @media (max-width: 768px ){
    flex-direction: column;
    -webkit-box-orient: vertical;
   }
-
 `;
 const Nv = styled.nav`
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;  
+  grid-column: 1/2;
+  grid-row: 2/3; 
   align-self: center;
-  
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
   perspective: 1000px;
   overflow: hidden;
-
-  opacity: 1;
   transform: translate3d(-50%, -50%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   @media (max-width: 768px ){
     padding-left: 0;
+    justify-self: center;
   }
 `;
+
 // const org0 = { mass: 10, tension: 550, friction: 140 }
 // const fast = { tension: 1200, friction: 40 }
 // const slow = { mass: 10, tension: 200, friction: 50 }
@@ -160,17 +134,20 @@ export const Nav = () => {
         onMouseMove={({ clientX: x }) => set({ x: calc(x) })}
         style={(size.width > 768) ?
           { transform: props.x.interpolate(trans) } : { transform: 'null' }} >
-        <NavLink href="about/">
+        <NavLi to="/about" onMouseEnter={() => setTheme('dark')}>
           <NavLabel>About</NavLabel>
-          <NavNo>01</NavNo></NavLink>
+          <NavNo>01</NavNo>
+        </NavLi>
         <NavDash />
-        <NavLink href="work/" >
+        <NavLi to="/work" >
           <NavLabel>Work</NavLabel>
-          <NavNo>02</NavNo></NavLink>
+          <NavNo>02</NavNo>
+        </NavLi>
         <NavDash />
-        <NavLink href="contact/">
+        <NavLi to="/contact">
           <NavLabel>Contact</NavLabel>
-          <NavNo>03</NavNo></NavLink>
+          <NavNo>03</NavNo>
+        </NavLi>
       </NavContiner>
     </Nv >
   )

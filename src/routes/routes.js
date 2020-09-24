@@ -1,5 +1,5 @@
-import React from 'react';
-import { Redirect } from 'react-router-dom';
+//import React from 'react';
+//import { Redirect } from 'react-router-dom';
 import {
   Home,
   About,
@@ -14,12 +14,6 @@ export const Routes = [
     key: 'root',
     exact: true,
     component: Home,
-  },
-  {
-    path: '/home',
-    key: 'home',
-    exact: true,
-    component: () => <Redirect to={'/'} />
   },
   {
     path: '/about',

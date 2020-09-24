@@ -1,3 +1,11 @@
+## React Portfolio
+
+- [Live](https://mgunsd.github.io/Portfolio)
+
+## Features
+
+- Recognize browser/system color mode.
+
 ## LOG
 
 - `npx create-react-app portfolio`
@@ -9,10 +17,4 @@
   then scripts addded tp pakage.json
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
-  "homepage": "https://mgunsd.github.io/Portfolio/"
-
-UI Kitten
-
-## Features
-
-- Recognize browser/system color mode.
+  "homepage": "https://mgunsd.github.io/Portfolio"

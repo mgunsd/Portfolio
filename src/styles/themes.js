@@ -3,11 +3,14 @@ import { ThemeProvider, ThemeContext } from "styled-components";
 import { colors as c } from './colors';
 import { fonts as f } from './fonts';
 
-const Mode = (
-  window.matchMedia &&
-  window.matchMedia('(prefers-color-scheme: dark)').matches
-) ? 'dark' : 'dark';
+// const Mode = (
+//   window.matchMedia &&
+//   window.matchMedia('(prefers-color-scheme: dark)').matches
+// ) ? 'dark' : 'light';
 
+//I Prefer always dark mode.. 
+
+const Mode = 'dark';
 export const useTheme = () => useContext(ThemeContext);
 
 const Theme = ({ children }) => {
