@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Color, Font } from 'utils';
 import { MainSection, H1, A, I, Body, } from 'components/a-commons';
 
 const Headline = styled(H1)`
@@ -21,19 +22,42 @@ const Hollow = styled.span`
   -webkit-text-stroke-color: #f2efe8;
 `;
 
-const Tags = styled(Body)`
+const Tags = styled.p`
+  color: ${Color('text')};
+  font: normal 400 1vw / 1.5em ${Font('title')};
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-decoration: none;
+  @media (max-width: 991px){
+    font-size: 2vw;
+  };
+  @media (max-width: 767px){
+    font-size: 2.7vw;
+  }; 
+
   display:grid;
   grid-auto-columns: 1fr;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto;
   grid-gap:10px;
   opacity:0.7;
   font-size: 0.8vw;
   margin-bottom: 5vw;
 `;
 const T = styled(I)`
-  transform: rotate(90deg);
-  padding:5px; 
+  color: ${Color('text')};
+  font: normal 400 1vw / 1.5em ${Font('icon')};
+  /* @media (max-width: 991px){
+    font-size: 2vw;
+  };
+  @media (max-width: 767px){
+    font-size: 2.7vw;
+  };  */  
+  /* //-webkit-transform: translateZ(0) scale(1.0, 1.0);
+  transform: rotateZ(90deg); */
+ 
   opacity:1;
   font-size: 1vw;
 `;
@@ -44,41 +68,43 @@ export const WorkIntro = () => {
       <Headline as='a' href='https://ppmap.bitbucket.io/'>
         <Hollow >
           PPMAP
-        </Hollow> <T> 􀄯</T>
+        </Hollow> <I> 􀄯</I>
       </Headline>
-      <Tags><T> 􀋡 </T> React, React Hooks, React Context, Webpack, Responsive, StyledComponents,
+      <Tags><T> # </T> React, React Hooks, React Context, Webpack, Responsive, StyledComponents,
       React Router, Formik, SVG, EvaDesign, Git, Bitbucket, Docker, Jenkins, Jira, Agile,  </Tags>
 
       <Headline as='a' href='https://github.com/mgunsd/Car-Loan-Calculator/tree/expo-master'>
-        CarLoan <T> 􀄯 </T>
+        CarLoan <I> 􀄯 </I>
       </Headline>
-      <Tags><T> 􀋡 </T> React Native, React Hooks, React Context, Expo, Auth, Firebase,
+      <Tags><T> # </T> React Native, React Hooks, React Context, Expo, Auth, Firebase,
       React Navigation, Theme Context, React Native Reanimated, Axios</Tags>
 
       <Headline as='a' href='https://www.npmjs.com/package/cra-template-emel'>
         <Hollow>
           EMEL
-        </Hollow> <T> 􀄯 </T>
+        </Hollow> <I> 􀄯 </I>
       </Headline>
-      <Tags><T> 􀋡 </T> React, NPM Pakage, Public, CRA Template, React Context, React Hooks, Responsive, StyledComponents, GitHub </Tags>
+      <Tags><T> # </T> React, NPM Pakage, Public, CRA Template, React Context, React Hooks, Responsive, StyledComponents, GitHub </Tags>
 
 
       <Headline as='a' href='https://github.com/mgunsd/pathfinder'>
-        Pathfinder<T> 􀄯 </T>
+        Pathfinder
+        <I> 􀄯 </I>
       </Headline>
-      <Tags><T> 􀋡 </T> React Native, React Hooks, Expo, Auth, Express Api, JWT, MangoDB, TypeScript, React Context, Theme Context,
-      React Navigation    </Tags>
+      <Tags><T> # </T> React Native, React Hooks, Expo, Auth, Express Api, JWT, MangoDB, TypeScript, React Context, Theme Context,
+      React Navigation</Tags>
 
       <Headline as='a' href='https://github.com/mgunsd/scout'>
         <Hollow>
           Scout
-        </Hollow> <T> 􀄯 </T>
+        </Hollow> <I> 􀄯 </I>
       </Headline>
-      <Tags><T> 􀋡 </T> React Native, React Hooks, React Context, Theme Context,
-      React Navigation, Expo, Auth, Firebase  </Tags>
+      <Tags><T> # </T> React Native, React Hooks, React Context, Theme Context,
+      React Navigation, Expo, Auth, Firebase</Tags>
 
       <Headline as='a' href='https://github.com/mgunsd?tab=repositories'>
-        More<T> 􀄯 </T>
+        More
+        <I> 􀄯 </I>
       </Headline>
     </MainSection>
   )
