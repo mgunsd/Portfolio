@@ -65,19 +65,19 @@ const T = styled(I)`
 export const WorkIntro = () => {
   return (
     <MainSection>
-      <Headline as='a' href='https://ppmap.bitbucket.io/'>
-        <Hollow >
-          PPMAP
-        </Hollow> <I> 􀄯</I>
-      </Headline>
-      <Tags><T> # </T> React, React Hooks, React Context, Webpack, Responsive, StyledComponents,
-      React Router, Formik, SVG, EvaDesign, Git, Bitbucket, Docker, Jenkins, Jira, Agile,  </Tags>
-
       <Headline as='a' href='https://github.com/mgunsd/Car-Loan-Calculator/tree/expo-master'>
-        CarLoan <I> 􀄯 </I>
+        <Hollow >CarLoan  </Hollow>
+        <I> 􀄯 </I>
       </Headline>
       <Tags><T> # </T> React Native, React Hooks, React Context, Expo, Auth, Firebase,
       React Navigation, Theme Context, React Native Reanimated, Axios</Tags>
+
+      <Headline as='a' href='/work'>
+        PPMAP
+        <I> 􀄯</I>
+      </Headline>
+      <Tags><T> # </T> React, React Hooks, React Context, Webpack, Responsive, StyledComponents,
+      React Router, Formik, SVG, EvaDesign, Git, Bitbucket, Docker, Jenkins, Jira, Agile,  </Tags>
 
       <Headline as='a' href='https://www.npmjs.com/package/cra-template-emel'>
         <Hollow>
