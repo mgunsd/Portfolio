@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Color, Font } from 'utils';
-import { MainSection, H1, A, I, Body, } from 'components/a-commons';
+import { MainSection, H1, A, I, Body, Image } from 'components/a-commons';
+import ppmap from 'assets/images/ppmap.png';
+import carloandark from 'assets/images/carloandark.png';
 
 const Headline = styled(H1)`
   grid-column: 5/9;
@@ -69,6 +71,7 @@ export const WorkIntro = () => {
         <Hollow >CarLoan  </Hollow>
         <I> 􀄯 </I>
       </Headline>
+      <Image src={carloandark} />
       <Tags><T> # </T> React Native, React Hooks, React Context, Expo, Auth, Firebase,
       React Navigation, Theme Context, React Native Reanimated, Axios</Tags>
 
@@ -76,8 +79,11 @@ export const WorkIntro = () => {
         PPMAP
         <I> 􀄯</I>
       </Headline>
+      <Image src={ppmap} />
       <Tags><T> # </T> React, React Hooks, React Context, Webpack, Responsive, StyledComponents,
       React Router, Formik, SVG, EvaDesign, Git, Bitbucket, Docker, Jenkins, Jira, Agile,  </Tags>
+
+
 
       <Headline as='a' href='https://www.npmjs.com/package/cra-template-emel'>
         <Hollow>
