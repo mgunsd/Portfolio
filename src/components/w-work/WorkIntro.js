@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Color, Font } from 'utils';
 import { MainSection, H1, A, I, Body, Image } from 'components/a-commons';
-import ppmap from 'assets/images/ppmap.png';
 import carloandark from 'assets/images/carloandark.png';
+import ppmap from 'assets/images/ppmap.png';
+import emel from 'assets/images/emel.png';
+
 
 const Headline = styled(H1)`
   grid-column: 5/9;
@@ -90,6 +92,7 @@ export const WorkIntro = () => {
           EMEL
         </Hollow> <I> 􀄯 </I>
       </Headline>
+      <Image src={emel} />
       <Tags><T> # </T> React, NPM Pakage, Public, CRA Template, React Context, React Hooks, Responsive, StyledComponents, GitHub </Tags>
 
 
