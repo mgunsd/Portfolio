@@ -108,7 +108,7 @@ export const WorkIntro = () => {
         </Hollow>
         <I> 􀄯 </I>
       </Headline>
-      <Tags><T> # </T> React Native, React Hooks, Expo, Auth, Express Api, JWT, MangoDB, TypeScript, React Context, Theme Context,
+      <Tags><T> # </T> React Native, React Hooks, Expo, Auth, Express Api, JWT, MongoDB, TypeScript, React Context, Theme Context,
       React Navigation</Tags>
 
       <Headline as='a' href='https://github.com/mgunsd?tab=repositories'>

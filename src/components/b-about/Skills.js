@@ -29,7 +29,7 @@ const skills = [
 const learning = [
   'Typescript', 'Node JS',
   'D3', 'GraphQL',
-  'AWS', 'Serverless', 'MangoDB',
+  'AWS', 'Serverless', 'MongoDB',
   'Swift', 'Phyton'
 ]
 
