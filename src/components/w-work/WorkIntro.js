@@ -86,8 +86,6 @@ export const WorkIntro = () => {
       <Tags><T> # </T> React, React Hooks, React Context, Webpack, Responsive, StyledComponents,
       React Router, Formik, SVG, EvaDesign, Git, Bitbucket, Docker, Jenkins, Jira, Agile,  </Tags>
 
-
-
       <Headline as='a' href='https://www.npmjs.com/package/cra-template-emel'>
         <Hollow>
           EMEL
@@ -97,11 +95,10 @@ export const WorkIntro = () => {
       <Tags><T> # </T> React, NPM Pakage, Public, CRA Template, React Context, React Hooks, Responsive, StyledComponents, GitHub </Tags>
 
       <Headline as='a' href='https://github.com/mgunsd/scout'>
-
         Activity
-            <I> 􀄯 </I>
-        <Image src={active} />
+        <I> 􀄯 </I>
       </Headline>
+      <Image src={active} />
       <Tags><T> # </T> React Native, React Hooks, React Context, Theme Context,
           React Navigation, Expo, Auth, Firebase</Tags>
 
