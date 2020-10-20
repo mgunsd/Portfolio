@@ -21,16 +21,16 @@ const Text = styled(Body)`
 `;
 
 const skills = [
-  'HTML', 'CSS', 'JavaScript',
-  'React', 'React Native', 'Git',
-  'Node JS', 'MangoDB', 'SQL',
+  'React', 'React Native', 'JavaScript',
+  'HTML', 'CSS', 'Git',
   'React Data Visualisation', 'CSS Animations', 'Agile',
 
 ]
 const learning = [
-  'Typescript', 'D3', 'GraphQL',
-  'AWS', 'Serverless', 'Git',
-  'Swift', 'Phyton', 'R',
+  'Typescript', 'Node JS',
+  'D3', 'GraphQL',
+  'AWS', 'Serverless', 'MangoDB',
+  'Swift', 'Phyton'
 ]
 
 export const Skills = () => {
