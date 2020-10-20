@@ -5,6 +5,7 @@ import { MainSection, H1, A, I, Body, Image } from 'components/a-commons';
 import carloandark from 'assets/images/carloandark.png';
 import ppmap from 'assets/images/ppmap.png';
 import emel from 'assets/images/emel.png';
+import active from 'assets/images/active.png';
 
 
 const Headline = styled(H1)`
@@ -95,21 +96,23 @@ export const WorkIntro = () => {
       <Image src={emel} />
       <Tags><T> # </T> React, NPM Pakage, Public, CRA Template, React Context, React Hooks, Responsive, StyledComponents, GitHub </Tags>
 
+      <Headline as='a' href='https://github.com/mgunsd/scout'>
+
+        Activity
+            <I> 􀄯 </I>
+        <Image src={active} />
+      </Headline>
+      <Tags><T> # </T> React Native, React Hooks, React Context, Theme Context,
+          React Navigation, Expo, Auth, Firebase</Tags>
 
       <Headline as='a' href='https://github.com/mgunsd/pathfinder'>
-        Pathfinder
+        <Hollow>
+          Pathfinder
+        </Hollow>
         <I> 􀄯 </I>
       </Headline>
       <Tags><T> # </T> React Native, React Hooks, Expo, Auth, Express Api, JWT, MangoDB, TypeScript, React Context, Theme Context,
       React Navigation</Tags>
-
-      <Headline as='a' href='https://github.com/mgunsd/scout'>
-        <Hollow>
-          Scout
-        </Hollow> <I> 􀄯 </I>
-      </Headline>
-      <Tags><T> # </T> React Native, React Hooks, React Context, Theme Context,
-      React Navigation, Expo, Auth, Firebase</Tags>
 
       <Headline as='a' href='https://github.com/mgunsd?tab=repositories'>
         More
