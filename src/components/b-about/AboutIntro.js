@@ -52,12 +52,12 @@ export const AboutIntro = () => {
   return (
     <MainSection>
       <Headline>
-        <Hollow>React </Hollow> <br />
+        <Hollow>React <br />Native </Hollow> <br />
         Frontend Developer
       </Headline>
       <TextContainer>
         <Text >
-          I'm a React & React Native Frontend Developer with 2+ years of experience,
+          I'm a React Native & React Frontend Developer with 2+ years of experience,
           currently working at
           <A href='https://smartfuture.io'> Smart Future Solutions<I> 􀄯 </I></A>,
           a software design agency based in Reading, UK. On occasion, I take on freelance projects that pique my interest.
