@@ -21,13 +21,13 @@ const Text = styled(Body)`
 `;
 
 const skills = [
-  'React', 'React Native', 'JavaScript',
+  'React Native', 'React', 'JavaScript',
   'HTML', 'CSS', 'Git',
-  'React Data Visualisation', 'CSS Animations', 'Agile',
+  'TypeScript', 'CSS Animations', 'Agile',
 
 ]
 const learning = [
-  'Typescript', 'Node JS',
+  'React Data Visualisation', 'Node JS',
   'D3', 'GraphQL',
   'AWS', 'Serverless', 'MongoDB',
   'Swift', 'Phyton'

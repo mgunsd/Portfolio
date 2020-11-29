@@ -6,7 +6,7 @@ import carloandark from 'assets/images/carloandark.png';
 import ppmap from 'assets/images/ppmap.png';
 import emel from 'assets/images/emel.png';
 import active from 'assets/images/active.png';
-
+import easypeasy from 'assets/images/easypeasy.png';
 
 const Headline = styled(H1)`
   grid-column: 5/9;
@@ -70,6 +70,14 @@ const T = styled(I)`
 export const WorkIntro = () => {
   return (
     <MainSection>
+       <Headline as='a' href='https://www.easypeasyapp.com'>
+        EasyPeasy
+        <I> 􀄯</I>
+      </Headline>
+      <Image src={easypeasy} />
+      <Tags><T> # </T> React Native, React Hooks, React Context, Redux, TypeScript,
+      React Navigation, Git, Bitbucket, Jira, Agile,  </Tags>
+
       <Headline as='a' href='https://github.com/mgunsd/Car-Loan-Calculator/tree/expo-master'>
         <Hollow >CarLoan  </Hollow>
         <I> 􀄯 </I>

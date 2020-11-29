@@ -32,8 +32,24 @@ export const Experience = () => {
         Experience
       </H2>
       <Head>
+        <Body><A as='a' href='https://www.easypeasyapp.com'> EasyPeasy<I> 􀄯 </I></A>, London, UK</Body>
+        <Date>since 10/2020</Date>
+      </Head>
+      <Line />
+      <Container>
+        <Body>
+          Software Engineer
+        </Body>
+        <Body>
+          <I>∙ </I>	Developed multiplatform mobile app with React Native. <br />
+          <I>∙ </I>	Worked on in-app purchases features for Apple AppStore and Google PlayStore.<br />
+          <br />
+          <I>􀁢 </I> React Native, React, TypeScript, JavaScript, Git, Jira, BitBucket, TDD
+      </Body>
+      </Container>
+      <Head>
         <Body><A as='a' href='https://smartfuture.io'> Smart Future Solutions<I> 􀄯 </I></A>, Reading, UK</Body>
-        <Date>since 09/2018</Date>
+        <Date>09/2018 – 10/2020</Date>
       </Head>
       <Line />
       <Container>
