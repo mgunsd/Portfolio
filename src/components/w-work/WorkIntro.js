@@ -100,7 +100,7 @@ export const WorkIntro = () => {
         </Hollow> <I> 􀄯 </I>
       </Headline>
       <Image src={emel} />
-      <Tags><T> # </T> React, NPM Pakage, Public, CRA Template, React Context, React Hooks, Responsive, StyledComponents, GitHub </Tags>
+      <Tags><T> # </T> React, NPM Package, Public, CRA Template, React Context, React Hooks, Responsive, StyledComponents, GitHub </Tags>
 
       <Headline as='a' href='https://github.com/mgunsd/scout'>
         Activity
