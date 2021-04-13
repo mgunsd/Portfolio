@@ -57,7 +57,7 @@ export const AboutIntro = () => {
       </Headline>
       <TextContainer>
         <Text >
-          I'm a React Native & React Frontend Developer with 2+ years of experience,
+          I'm a React Native & React Frontend Developer with 4+ years of experience,
           currently working at 
           <A href='https://www.easypeasyapp.com/'> EasyPeasy <I> 􀄯 </I></A>,
           an award winning children’s developmental app. On occasion, I take on freelance projects that pique my interest.
