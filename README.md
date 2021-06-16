@@ -18,3 +18,5 @@
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "homepage": "https://mgunsd.github.io/Portfolio"
+
+  ...
